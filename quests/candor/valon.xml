@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
-  <its:translateRule selector="//quests/var/quest/@name" translate="yes"/>
-  <its:translateRule selector="//quests/var/quest/name" translate="yes"/>
-  <its:translateRule selector="//quests/var/quest/text" translate="yes"/>
-  <its:translateRule selector="//*" translate="no"/>
-</its:rules>
 <quests>
   <var id="2">
+    <its:rules xmlns:its="http://www.w3.org/2005/11/its" version="1.0">
+      <its:translateRule selector="//quest/@name" translate="yes"/>
+      <its:translateRule selector="//quest/name" translate="yes"/>
+      <its:translateRule selector="//quest/text" translate="yes"/>
+      <its:translateRule selector="//*" translate="no"/>
+    </its:rules>
     <effect map="029-1.tmx" npc="156" value="0" effect="45"/>
     <effect map="029-1.tmx" npc="156" value="1,2,3,4,5,6" effect="46"/>
     <quest name="Valon" group="Candor Island" incomplete="1">
